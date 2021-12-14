@@ -1,0 +1,49 @@
+{
+    "name": "xml2imagedata",
+    "description": "Extracts header metadata from xml file. <strong>Intended for use with Prairie View use only</strong>",
+    "syntax": [
+        {
+            "code": "imageData = xml2imagedata(xmlFilename)",
+            "description": "reads the xml file, specified by xmlFilename, and returns a structure, imageData, containing all of the header information about the collected images (i.e. pmt gain, and image resolution). For the X/Y/Z positions, please note that the header metadata contains only the position when \"Acquire image\" was selected. These values may not accurately represent the position for collected images.",
+            "input": [
+                {
+                    "name": "xmlFilename",
+                    "type": ["char","string"],
+                    "purpose": "XML data file",
+                    "description": "The absolute or relative path for the XML file where the metadata is intended to be extracted."
+                }
+            ],
+            "output": [
+                {
+                    "name": "imageData",
+                    "type": "struct",
+                    "purpose": "Header metadata",
+                    "description": "All metadata from header of XML file."
+                }
+            ]
+        }
+        ],
+    "examples": [
+        {
+            "title": "Load metadata",
+            "description": "Load metadata and extract infromation from output variable",
+            "script": [
+                {
+                    "beforeComment": "Load the metadata",
+                    "code": "imageData = xml2imagedata('./+ignore/Files/SHG Metadata.xml');",
+                    "afterComment": null
+                },
+                {
+                    "beforeComment": "Report date taken and pmt gain for all channels",
+                    "code": "imageData.date\nimageData.pmtGain",
+                    "afterComment": null
+                },
+                {
+                    "beforeComment": "Get matrix of pmt gains",
+                    "code": "pmtGains = struct2array(imageData.pmtGain)",
+                    "afterComment": null
+                }
+            ]
+        }
+    ]
+}

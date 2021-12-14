@@ -1,0 +1,45 @@
+{
+    "name": null,
+    "description": null,
+    "syntax": [
+        {
+            "code": null,
+            "description": null,
+            "input": [
+                {
+                    "name": null,
+                    "type": null,
+                    "purpose": null,
+                    "description": null
+                }
+            ],
+            "output": [
+                {
+                    "name": null,
+                    "type": null,
+                    "purpose": null,
+                    "description": null
+                }
+            ]
+        }
+        ],
+    "examples": [
+        {
+            "title": null,
+            "description": null,
+            "script": [
+                {
+                    "beforeComment": null,
+                    "code": null,
+                    "afterComment": null
+                }
+            ]
+        }
+    ],
+    "moreAbout": [
+        {
+            "title": null,
+            "description": null
+        }
+    ]
+}
