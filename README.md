@@ -6,7 +6,7 @@ Within this folder is assorted code and documentation snippets for anyone intere
 - 📁Matlab documentation
   - An easily scalable approach to consistently document matlab functions which integrates with matlab's help documentation.
 - 📜stackShow.m
-  - This matlab function, which has gone through a few arduous iterations, renders 3D image volumes. Here is an example of one such render: [insert image here]
+  - This matlab function, which has gone through a few arduous iterations, renders 3D image volumes.
 - 📜green2D.m
   - The purpose of this matlab function is to perform isoparametric mapping for 2D triangles or squares to directly calculate deformation based on continuum mechanics.
 - 📜imageStitch.m
